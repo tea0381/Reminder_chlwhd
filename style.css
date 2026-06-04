@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "맑은 고딕", sans-serif;
+    background: #f6f7fb;
+    color: #222;
+}
+
+/* 장면1 */
+
+header {
+    text-align: center;
+    padding: 32px;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+header h1 {
+    font-size: 42px;
+}
+
+header p {
+    font-size: 22px;
+    margin-top: 8px;
+    color: #666;
+}
+
+main {
+    padding: 25px;
+}
+
+.empty-message {
+    text-align: center;
+    font-size: 28px;
+    margin-top: 100px;
+    color: #888;
+}
+
+.schedule-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 24px;
+    margin-bottom: 18px;
+
+    border-radius: 24px;
+
+    font-size: 28px;
+}
+
+.schedule-left {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.schedule-time {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.schedule-name {
+    font-size: 34px;
+}
+
+.waiting {
+    background: #e8e8e8;
+}
+
+.current {
+    background: #ffe37c;
+}
+
+.completed {
+    background: #b8f3b0;
+}
+
+.status {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#add-btn {
+    position: fixed;
+
+    right: 30px;
+    bottom: 30px;
+
+    width: 90px;
+    height: 90px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #3b82f6;
+    color: white;
+
+    font-size: 55px;
+    cursor: pointer;
+}
+
+/* 모달 */
+
+#modal-overlay {
+    position: fixed;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.4);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    width: 420px;
+
+    background: white;
+
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.modal h2 {
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+.modal label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+
+.modal input {
+    width: 100%;
+    padding: 14px;
+    font-size: 20px;
+}
+
+.modal-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.modal-buttons button {
+    flex: 1;
+    padding: 14px;
+    font-size: 20px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* 장면2 */
+
+#alarm-screen {
+    position: fixed;
+    inset: 0;
+
+    background: #fff7c7;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.alarm-content {
+    text-align: center;
+}
+
+.alarm-icon {
+    font-size: 120px;
+}
+
+#alarm-title {
+    font-size: 72px;
+    margin-top: 20px;
+}
+
+#alarm-time {
+    font-size: 42px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.alarm-buttons {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+.alarm-buttons button {
+    width: 220px;
+    height: 90px;
+
+    border: none;
+    border-radius: 16px;
+
+    font-size: 32px;
+}
+
+#complete-btn {
+    background: #63d471;
+}
+
+#confirm-btn {
+    background: #4f8cff;
+    color: white;
+}
+
+.admin-trigger {
+    cursor: pointer;
+}
+
+.complete-card-btn {
+
+    border: none;
+
+    padding: 12px 18px;
+
+    border-radius: 12px;
+
+    background: #3b82f6;
+    color: white;
+
+    font-size: 20px;
+}
+
+.complete-card-btn:disabled {
+
+    opacity: 0.4;
+
+    cursor: not-allowed;
+
+    background: #999;
+}

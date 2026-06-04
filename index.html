@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기억 도우미</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- 장면1 -->
+
+    <div id="main-screen">
+
+        <header>
+            <h1>오늘의 일정</h1>
+            <p>예정된 일을 확인해요</p>
+        </header>
+
+        <main>
+            <div id="schedule-list"></div>
+        </main>
+
+        <button id="add-btn">+</button>
+
+    </div>
+
+    <!-- 일정 추가 모달 -->
+
+    <div id="modal-overlay" class="hidden">
+
+        <div class="modal">
+
+            <h2>새 일정 추가</h2>
+
+            <label>일정 이름</label>
+            <input type="text" id="schedule-name">
+
+            <label>시간</label>
+            <input type="time" id="schedule-time">
+
+            <div class="modal-buttons">
+            
+                <button id="save-btn">
+                    저장
+                </button>
+            
+                <button id="delete-btn" class="hidden">
+                    삭제
+                </button>
+            
+                <button id="cancel-btn">
+                    취소
+                </button>
+            
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- 장면2 -->
+
+    <div id="alarm-screen" class="hidden">
+
+        <div class="alarm-content">
+
+            <div class="alarm-icon">
+                🔔
+            </div>
+
+            <h1 id="alarm-title"></h1>
+
+            <p id="alarm-time"></p>
+
+            <div class="alarm-buttons">
+
+                <button id="complete-btn">
+                    완료
+                </button>
+
+                <button id="confirm-btn">
+                    알았어요
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
